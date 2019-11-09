@@ -35,7 +35,7 @@ public class Triangle {
         if(sidea == sideb && sideb == sidec){
             type = type + "Equilateral";
         }
-        else if(sidea == sideb || sidea == sidec || sideb == sidec){
+        else if(sidea == sideb || sideb == sidec){
             type = type + "Isosceles";
         }
         else{
@@ -54,6 +54,10 @@ public class Triangle {
     //function to print the triangle type
     public void printType(){
         System.out.println("\nTriangle type is: " + type);
+    }
+
+    public String getType(){
+        return type;
     }
 
     //function to get the area of the triangle
